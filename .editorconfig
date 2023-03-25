@@ -1,0 +1,17 @@
+root = true
+
+[*]
+charset = utf-8
+indent_size = 2
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+fsharp_indent_on_try_with = true
+fsharp_multi_line_lambda_closing_newline = true
+fsharp_multiline_block_brackets_on_same_column = true
+fsharp_semicolon_at_end_of_line = true
+fsharp_space_before_lowercase_invocation = false
+
+# Feliz style
+fsharp_single_argument_web_mode = true

@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Global.fs" />
+
+    <Compile Include="Models\Role.fs" />
+
+    <Compile Include="Models\AuthenticationStatus.fs" />
+    <Compile Include="Models\AuthorizationStatus.fs" />
+
+    <Compile Include="Models\Credentials.fs" />
+    <Compile Include="Models\Task.fs" />
+    <Compile Include="Models\User.fs" />
+
+    <Compile Include="Contracts\AuthenticationContract.fs" />
+    <Compile Include="Contracts\TaskContract.fs" />
+  </ItemGroup>
+</Project>
