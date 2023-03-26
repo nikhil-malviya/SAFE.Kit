@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Public\**" />
+
+    <Compile Include="Global.fs" />
+
+    <Compile Include="Repositories\Entities\UserEntity.fs" />
+
+    <Compile Include="Repositories\UserRepository.fs" />
+    <Compile Include="Repositories\TaskRepository.fs" />
+
+    <Compile Include="Services\CryptographyService.fs" />
+    <Compile Include="Services\UserService.fs" />
+    <Compile Include="Services\DevelopmentService.fs" />
+    <Compile Include="Services\TaskService.fs" />
+
+    <Compile Include="Options.fs" />
+
+    <Compile Include="Remoting.fs" />
+
+    <Compile Include="Routes.fs" />
+
+    <Compile Include="Configuration\ConfigureApp.fs" />
+    <Compile Include="Configuration\ConfigureServices.fs" />
+    <Compile Include="Configuration\ConfigureLogging.fs" />
+
+    <Compile Include="App.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Shared\Shared.fsproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="dbup-postgresql" Version="4.6.3" />
+    <PackageReference Include="Fable.Remoting.Giraffe" Version="5.12.0" />
+    <PackageReference Include="FsConfig" Version="3.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.10" />
+    <PackageReference Include="Npgsql.FSharp" Version="5.4.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="6.0.6" />
+  </ItemGroup>
+</Project>
